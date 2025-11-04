@@ -1,9 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Base application theme for Android TV -->
+    <!-- Base application theme for Android TV using Ocean Professional palette -->
     <style name="AppTheme" parent="Theme.Leanback">
-        <!-- Customize your theme here -->
-        <item name="android:windowBackground">@color/tv_background</item>
-        <item name="android:colorPrimary">@color/tv_accent</item>
+        <!-- Ocean Professional colors -->
+        <item name="android:windowBackground">@color/op_background</item>
+        <item name="android:colorPrimary">@color/op_primary</item>
+        <item name="android:colorAccent">@color/op_secondary</item>
+        <item name="android:textColorPrimary">@color/op_text</item>
+
+        <!-- Keep TV essentials -->
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:windowTranslucentNavigation">false</item>
+    </style>
+
+    <!-- Retro/Modern hybrid text appearance for primary greeting -->
+    <style name="TextAppearance.GreetingTitle" parent="@android:style/TextAppearance.Material.Display1">
+        <item name="android:textColor">@color/op_text</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:shadowColor">#22000000</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">2</item>
+        <item name="android:shadowRadius">4</item>
+    </style>
+
+    <!-- Subtle caption style -->
+    <style name="TextAppearance.GreetingSubtitle" parent="@android:style/TextAppearance.Material.Subhead">
+        <item name="android:textColor">@color/op_text_muted</item>
     </style>
 </resources>

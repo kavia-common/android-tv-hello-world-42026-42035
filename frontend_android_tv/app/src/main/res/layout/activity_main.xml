@@ -4,32 +4,77 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#000000">
+    android:background="@drawable/bg_subtle_gradient"
+    android:paddingLeft="48dp"
+    android:paddingRight="48dp"
+    android:paddingTop="48dp"
+    android:paddingBottom="48dp">
 
-    <TextView
-        android:id="@+id/title_text"
-        android:layout_width="wrap_content"
+    <!-- Surface card to provide subtle retro/modern panel -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/surface_card"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="frontend_android_tv"
-        android:textSize="48sp"
-        android:textColor="#FFFFFF"
-        android:focusable="true"
-        android:focusableInTouchMode="true"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:foregroundGravity="center"
+        app:cardBackgroundColor="@color/op_surface"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="6dp"
+        app:layout_constraintWidth_min="600dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
 
-    <TextView
-        android:id="@+id/subtitle_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Ready for rating screen integration"
-        android:textSize="24sp"
-        android:textColor="#CCCCCC"
-        android:layout_marginTop="24dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/title_text" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="48dp"
+            android:paddingRight="48dp"
+            android:paddingTop="40dp"
+            android:paddingBottom="40dp"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/title_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hello_android_tv"
+                android:textSize="48sp"
+                android:textStyle="bold"
+                android:textColor="@color/op_text"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:padding="8dp"
+                android:fontFamily="sans-serif-medium"
+                style="@style/TextAppearance.GreetingTitle" />
+
+            <TextView
+                android:id="@+id/subtitle_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hello_subtitle"
+                android:textSize="22sp"
+                android:textColor="@color/op_text_muted"
+                android:layout_marginTop="16dp"
+                android:fontFamily="sans-serif"
+                style="@style/TextAppearance.GreetingSubtitle" />
+
+            <!-- Decorative focusable accent pill for D-pad visual feedback (non-interactive) -->
+            <TextView
+                android:id="@+id/accent_pill"
+                android:layout_width="180dp"
+                android:layout_height="44dp"
+                android:layout_marginTop="28dp"
+                android:gravity="center"
+                android:text="@string/hello_accent"
+                android:textColor="@color/op_surface"
+                android:textStyle="bold"
+                android:backgroundTint="@color/op_primary"
+                android:background="@android:color/transparent"
+                android:focusable="true"
+                android:focusableInTouchMode="true" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

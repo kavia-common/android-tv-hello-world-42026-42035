@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">frontend_android_tv</string>
+
+    <!-- Hello World -->
+    <string name="hello_android_tv">Hello, Android TV!</string>
+    <string name="hello_subtitle">Ocean Professional • Modern minimalist</string>
+    <string name="hello_accent">Explore</string>
     
     <!-- Rating Screen Strings -->
     <string name="rating_title">Did you like it?</string>

@@ -18,7 +18,7 @@
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
-        android:label="frontend_android_tv"
+        android:label="@string/app_name"
         android:theme="@style/AppTheme"
         android:banner="@drawable/app_banner">
 

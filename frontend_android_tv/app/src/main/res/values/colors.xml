@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- TV optimized colors -->
-    <color name="tv_background">#000000</color>
-    <color name="tv_overlay">#CC000000</color>
-    <color name="tv_primary">#FFFFFF</color>
-    <color name="tv_secondary">#CCCCCC</color>
-    <color name="tv_accent">#2196F3</color>
-    <color name="tv_button_focused">#FFFFFF</color>
-    <color name="tv_button_normal">#80FFFFFF</color>
+    <!-- Ocean Professional palette -->
+    <color name="op_primary">#2563EB</color>       <!-- Blue 600 -->
+    <color name="op_secondary">#F59E0B</color>     <!-- Amber 500 (success/accent) -->
+    <color name="op_error">#EF4444</color>         <!-- Red 500 -->
+    <color name="op_background">#F9FAFB</color>    <!-- Gray 50 -->
+    <color name="op_surface">#FFFFFF</color>       <!-- Pure white -->
+    <color name="op_text">#111827</color>          <!-- Gray 900 -->
+    <color name="op_text_muted">#4B5563</color>    <!-- Gray 600 -->
+
+    <!-- Gradient stops (subtle) -->
+    <color name="op_grad_start">#1A2563EB</color>  <!-- Blue 600 @ 10% -->
+    <color name="op_grad_end">#0DF3F4F6</color>    <!-- Gray 100-ish @ ~5-10% -->
+
+    <!-- Focus highlight for D-pad navigation -->
+    <color name="op_focus_ring">#80FFFFFF</color>
 </resources>
