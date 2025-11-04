@@ -2,17 +2,31 @@
 <resources>
     <string name="app_name">frontend_android_tv</string>
 
-    <!-- Hello World -->
-    <string name="hello_android_tv">Hello, Android TV!</string>
-    <string name="hello_subtitle">Ocean Professional • Modern minimalist</string>
-    <string name="hello_accent">Explore</string>
-    
-    <!-- Rating Screen Strings -->
-    <string name="rating_title">Did you like it?</string>
-    <string name="rating_message">Your vote helps us recommend more content like this.</string>
-    <string name="rating_like">I like it</string>
-    <string name="rating_love">I love it</string>
-    <string name="rating_dislike">I don\'t like it</string>
-    <string name="rating_close">Close</string>
-    <string name="rating_countdown">Closing in %d seconds</string>
+    <!-- Splash -->
+    <string name="splash_title">MyTV</string>
+
+    <!-- Top Menu -->
+    <string name="menu_home">Home</string>
+    <string name="menu_login">Login</string>
+    <string name="menu_settings">Setting</string>
+    <string name="menu_my_plan">My Plan</string>
+
+    <!-- Home -->
+    <string name="home_banner_title">Featured Blockbuster</string>
+    <string name="home_banner_subtitle">Enjoy the latest and greatest on MyTV</string>
+
+    <!-- Rails -->
+    <string name="rail_top_trending">Top trending</string>
+    <string name="rail_continue">Continue watching</string>
+    <string name="rail_action">Action</string>
+    <string name="rail_drama">Drama</string>
+    <string name="rail_horror">Horror</string>
+    <string name="rail_other">Other genres</string>
+
+    <!-- Login -->
+    <string name="login_title">Login</string>
+    <string name="login_email">Email</string>
+    <string name="login_password">Password</string>
+    <string name="login_submit">Sign In</string>
+    <string name="login_note">This is a placeholder login screen.</string>
 </resources>
